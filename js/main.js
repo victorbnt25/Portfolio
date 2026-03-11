@@ -9,7 +9,14 @@ iconoMenu.onclick = () => {
     enlacesMenu.classList.toggle('activo');
 };
 
-// Cerrar el menú al hacer clic en un enlace (modo móvil)
+// Cerrar el menú al hacer clic en un enlace o fuera de él
+document.addEventListener('click', (e) => {
+    if (!iconoMenu.contains(e.target) && !enlacesMenu.contains(e.target)) {
+        iconoMenu.classList.remove('bx-x');
+        enlacesMenu.classList.remove('activo');
+    }
+});
+
 const enlaces = document.querySelectorAll('.enlaces-navegacion li a');
 
 enlaces.forEach(enlace => {

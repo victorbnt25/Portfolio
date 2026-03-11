@@ -26,8 +26,6 @@ Para previsualizar el portfolio, simplemente navega por los archivos y abre `ind
 
 ## Contacto
 
-- **Email**: victor.benito.millan@gmail.com
 - **LinkedIn**: [Enlace a mi perfil](https://www.linkedin.com/in/victor-benito-millán-655681240)
 - **GitHub**: [@victorbnt25](https://github.com/victorbnt25)
-- update
-- 
+
