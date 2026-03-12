@@ -38,13 +38,16 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--color-fondo);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--texto-secundario);
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-principal);
 }
@@ -399,7 +402,7 @@ body {
     align-items: center;
     opacity: 0;
     transition: 0.4s ease;
-    pointer-events: none; 
+    pointer-events: none;
     z-index: 5;
 }
 
@@ -419,7 +422,7 @@ body {
     font-size: 24px;
     transform: translateY(20px);
     transition: 0.4s ease;
-    pointer-events: auto; 
+    pointer-events: auto;
 }
 
 .enlace-proyecto:hover {
@@ -472,7 +475,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    margin-top: auto; 
+    margin-top: auto;
     padding: 12px 15px;
     border-radius: 8px;
     font-size: 15px;
@@ -538,8 +541,13 @@ body {
     z-index: 10;
 }
 
-.carrusel-btn-prev { left: 10px; }
-.carrusel-btn-next { right: 10px; }
+.carrusel-btn-prev {
+    left: 10px;
+}
+
+.carrusel-btn-next {
+    right: 10px;
+}
 
 .tarjeta-proyecto:hover .carrusel-btn {
     opacity: 1;
@@ -658,7 +666,7 @@ body {
 }
 
 .modal-imagen {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 2000;
     padding-top: 50px;
@@ -688,8 +696,13 @@ body {
 }
 
 @keyframes zoomIn {
-    from {transform: scale(0.8)}
-    to {transform: scale(1)}
+    from {
+        transform: scale(0.8)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 .cerrar-modal {
@@ -726,8 +739,13 @@ body {
     color: var(--color-principal);
 }
 
-.modal-btn-prev { left: 2%; }
-.modal-btn-next { right: 2%; }
+.modal-btn-prev {
+    left: 2%;
+}
+
+.modal-btn-next {
+    right: 2%;
+}
 
 .pie-pagina {
     background: var(--color-fondo-secundario);
@@ -949,4 +967,8 @@ body {
         top: 15px;
         font-size: 40px;
     }
+}
+
+font-size: 40px;
+}
 }
