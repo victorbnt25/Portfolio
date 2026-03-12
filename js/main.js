@@ -1,14 +1,17 @@
 const iconoMenu = document.querySelector('#icono-menu');
+const iconoMenuI = document.querySelector('#icono-menu i');
 const enlacesMenu = document.querySelector('.enlaces-navegacion');
 
 iconoMenu.onclick = () => {
-    iconoMenu.classList.toggle('bx-x');
+    iconoMenuI.classList.toggle('bx-menu');
+    iconoMenuI.classList.toggle('bx-x');
     enlacesMenu.classList.toggle('activo');
 };
 
 document.addEventListener('click', (e) => {
     if (!iconoMenu.contains(e.target) && !enlacesMenu.contains(e.target)) {
-        iconoMenu.classList.remove('bx-x');
+        iconoMenuI.classList.add('bx-menu');
+        iconoMenuI.classList.remove('bx-x');
         enlacesMenu.classList.remove('activo');
     }
 });
@@ -17,7 +20,8 @@ const enlaces = document.querySelectorAll('.enlaces-navegacion li a');
 
 enlaces.forEach(enlace => {
     enlace.addEventListener('click', () => {
-        iconoMenu.classList.remove('bx-x');
+        iconoMenuI.classList.add('bx-menu');
+        iconoMenuI.classList.remove('bx-x');
         enlacesMenu.classList.remove('activo');
     });
 });
